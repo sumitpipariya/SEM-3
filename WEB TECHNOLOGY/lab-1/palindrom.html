@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		a = parseInt(prompt("Enter the number :"))
+		b = 0
+		c = 0
+		ans = a
+		
+		while(a!=0){
+			b = a%10;
+			c = c*10+b;
+			a = parseInt(a/10);	
+		}
+
+		if(ans==c){
+			document.write("Palendrom number")
+		}
+		else{
+			document.write("Not Palendrom")
+		}
+
+	</script>
+</body>
+</html>

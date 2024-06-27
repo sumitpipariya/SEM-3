@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		a = parseInt(prompt("Enter the number you want :"))
+		
+
+		for(i=0;i<=a;i++){
+			b = 0
+			for(j=1;j<=i;j++){
+				if(i%j==0){
+					b++
+				}
+			}
+
+			if(b==2){
+				document.write(i+"<br/>")
+			}
+		} 
+		
+	</script>
+</body>
+</html>

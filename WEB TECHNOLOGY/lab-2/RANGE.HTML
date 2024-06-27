@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		a = prompt("Enter the number between 0 to 999")
+
+		if(a==null || a==""){
+			document.write("This is Null ")
+		}
+
+		if(isNaN(a)){
+			document.write("This is String")
+		}
+
+		if(a<=0 || a>=999){
+			alert("Out of bound ")
+		}
+		else{
+			first = ['zero','one','two','three','four','five','six','seven','eight','nine']
+			teen = ['ten','eleven'.'twelve','thirteen','fouteen','fifteen','sixteen','seventeen','eighteen','ninteen']
+			ten = ['twenty','thirty','fourty','fifty','sixty','seventy','eighty','ninty','hundred']
+
+			result = ""
+
+			if(a>=100){
+				result += first[Math.floor(a/100)] + "hundred"
+				a = a%100
+			}
+			else if(a>=20){
+				result += ten[Math.floor(a/10)]
+				a = a%10
+			}
+			else if(a<20){
+				result += first[Math.floor(a)]
+			}
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		stuednt = [
+			  {
+			    "name": "Abel Jacobson",
+			    "ENROLLMENTNUMBER": "1-486-304-8457 x742",
+			    "RESULT": 73694,
+			    "FIELD": "driver-hack",
+			    "id": "1"
+			  },
+			  {
+			    "name": "April Zieme",
+			    "ENROLLMENTNUMBER": "1-470-316-5112 x61751",
+			    "RESULT": 9155,
+			    "FIELD": "application-hack",
+			    "id": "2"
+			  },
+			  {
+			    "name": "Jerry Hickle",
+			    "ENROLLMENTNUMBER": "(203) 943-0266 x99812",
+			    "RESULT": 90222,
+			    "FIELD": "array-compress",
+			    "id": "3"
+			  },
+			  {
+			    "name": "Levi Volkman",
+			    "ENROLLMENTNUMBER": "1-317-334-6231 x44387",
+			    "RESULT": 21225,
+			    "FIELD": "sensor-connect",
+			    "id": "4"
+			  },
+			  {
+			    "name": "Margie West",
+			    "ENROLLMENTNUMBER": "(951) 410-6746",
+			    "RESULT": 1247,
+			    "FIELD": "microchip-override",
+			    "id": "5"
+			  }
+			]
+
+			document.write("<table border = 1>")
+
+			document.write("<tr> <th>NAME</th> <th>ENROLLMENTNUMBER</th> <th>RESULT</th> <th>FIELD</th> <th>id</th> </tr>")
+
+			for(i=0;i<stuednt.length;i++){
+
+				document.write("<tr>")
+
+					document.write("<td>")
+						document.write(stuednt[i].name)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(stuednt[i].ENROLLMENTNUMBER)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(stuednt[i].RESULT)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(stuednt[i].FIELD)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(stuednt[i].id)
+					document.write("</td>")
+
+
+				document.write("</tr>")
+
+			}
+
+			document.write("</table>")
+			
+
+	</script>
+</body>
+</html>

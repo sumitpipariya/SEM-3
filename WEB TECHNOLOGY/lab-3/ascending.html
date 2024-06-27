@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		a = []
+		b = parseInt(prompt("Enetr the size :"))
+		
+		for(i=0;i<b;i++){
+			c = parseInt(prompt("Enter the number"))
+			a.push(c)
+		}
+
+		for(j=0;j<=b;j++){
+			for(k=0;k<=b-j-1;k++){
+				if(a[k]>a[k+1]){
+					temp = a[k]
+					a[k] = a[k+1]
+					a[k+1] = temp
+				}
+			}
+		}
+		document.write(a)
+
+		
+
+	</script>
+</body>
+</html>

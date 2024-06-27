@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		product = [
+			  {
+			    "company": "Haag LLC",
+			    "price": "710.00",
+			    "expire": "2024-06-20T05:18:29.755Z",
+			    "color": [282, 0.28, 0.64],
+			    "id": "1"
+			  },
+			  {
+			    "company": "Hermiston Group",
+			    "price": "204.00",
+			    "expire": "2024-06-20T05:18:29.755Z",
+			    "color": [179, 0.66, 0.18],
+			    "id": "2"
+			  },
+			  {
+			    "company": "Wehner, Beatty and Sanford",
+			    "price": "354.00",
+			    "expire": "2024-06-20T05:18:29.755Z",
+			    "color": [206, 0.48, 0.22],
+			    "id": "3"
+			  },
+			  {
+			    "company": "Armstrong - Ruecker",
+			    "price": "308.00",
+			    "expire": "2024-06-20T05:18:29.755Z",
+			    "color": [106, 0.87, 0.83],
+			    "id": "4"
+			  },
+			  {
+			    "company": "Stehr - Stehr",
+			    "price": "589.00",
+			    "expire": "2024-06-20T05:18:29.755Z",
+			    "color": [318, 0.8, 0.3],
+			    "id": "5"
+			  }
+			]
+
+
+			document.write("<table border = 1>")
+
+			document.write("<tr> <th>company</th> <th>price</th> <th>expire</th> <th>color</th> <th>id</th> </tr>")
+
+			for(i=0;i<product.length;i++){
+
+				document.write("<tr>")
+
+					document.write("<td>")
+						document.write(product[i].company)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(product[i].price)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(product[i].expire)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(product[i].color)
+					document.write("</td>")
+
+					document.write("<td>")
+						document.write(product[i].id)
+					document.write("</td>")
+
+
+				document.write("</tr>")
+
+			}
+
+			document.write("</table>")
+
+	</script>
+
+</body>
+</html>
