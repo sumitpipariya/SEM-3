@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="width: 80vh; height: 80vh">
+
+	<h5 id="abc">mouse event : </h5>
+
+	<script type="text/javascript">
+		
+	let a = document.getElementById('abc')
+
+	function display(name){
+		a.innerText = 'Mouse event : ' + name
+	}
+
+	function displaykey(name){
+		a.innerText = 'Press Key : ' + name
+	}
+
+	document.addEventListener('click',function() {display('click')})
+	document.addEventListener('dblclick',function() {display('Double click')})
+	document.addEventListener('mouseout',function() {display('Mouse is out')})
+	document.addEventListener('keydown',function(event) {displaykey(event.key)})
+
+
+	</script>
+
+</body>
+</html>
