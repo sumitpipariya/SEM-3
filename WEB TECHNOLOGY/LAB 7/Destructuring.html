@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+			
+		let a = {
+			'name' : 'abc',
+			'roll_no' : 1,
+			'enrollno' : 123456,
+		}
+
+
+		let obj = {...a, b:10}
+		const {name,...rest} = obj
+		console.log(name,rest)
+
+	</script>
+</body>
+</html>
