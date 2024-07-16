@@ -3,9 +3,11 @@ public class LinkedList{
 
 		LinkedList ln = new LinkedList();
 		ln.InsertAtFirst(5);
-		ln.InsertAtFirst(15);
+		ln.InsertAtLast(20);
+		ln.InsertAtOrdered(10);
+		ln.InsertAtOrdered(30);
 
-		ln.InsertAtLast(10);
+		ln.DeleteNode(5);
 		ln.display();
 
 	}
@@ -50,6 +52,56 @@ public class LinkedList{
 		
 	}
 
+	public void InsertAtOrdered(int data){
+		Node newNode = new Node(data);
+		Node save = first;
+
+		if(first == null){
+			first = newNode;
+			return;
+		}
+
+		if(newNode.info <= save.info){
+			newNode.link = first;
+			first = newNode;
+			return;
+		}
+
+		
+		while(save.link != null && newNode.info >= save.link.info){
+			save = save.link;
+		}
+		newNode.link = save.link;
+		save.link = newNode;
+	}
+
+	public void DeleteNode(int data){
+		Node newNode = new Node(data);
+		Node save = first;
+		Node temp = null;
+
+		if(first == null){
+			System.out.println("Empty Node");
+			return;
+		}
+
+		if(save.info == data){
+			first = save.link;
+			return;
+		}
+
+		while(save != null && save.info != data){
+			temp = save;
+			save = save.link;
+		}
+
+		if(save == null){
+			System.out.println("Node Not Found ");
+			return;
+		}
+		temp.link = save.link;
+
+	}
 	
 	public void display(){
 		Node temp = first;
