@@ -56,7 +56,7 @@ DELETE FROM ACADEMICDATA
 WHERE RNO = 104
 
 
--------------------------------Part – B:------------------------------
+-------------------------------Part â€“ B:------------------------------
 
 
 --1. Create a view that displays information of all students whose SPI is above 8.5
@@ -74,7 +74,7 @@ CREATE VIEW COMPUTERVIEW AS
 SELECT BRANCH FROM STUDENT_INFO
 WHERE BRANCH = 'CE'
 
----------------------------------Part – C:---------------------------
+---------------------------------Part â€“ C:---------------------------
 
 
 --1. Create a view Result_EC that displays the name and SPI of students with SPI less than 5 of branch EC
@@ -87,11 +87,10 @@ UPDATE STUDENT_DETAILS
 SET SPI = 4.90
 WHERE NAME = 'MAHESH'
 
---3. Create a view Stu_Bklog with RNo, Name and Bklog columns in which name starts with ‘M’ and having bklogs more than 5.
+--3. Create a view Stu_Bklog with RNo, Name and Bklog columns in which name starts with â€˜Mâ€™ and having bklogs more than 5.
 CREATE VIEW STUDENT_BKLOG AS
 SELECT RNO, NAME, BKLOG FROM STUDENT_INFO
 WHERE NAME LIKE 'M%' AND BKLOG > 5
 
---4. Drop Computerview form the database.
-DROP VIEW COMPUTERVIEW 
+ 
 
