@@ -5,7 +5,7 @@ import Aboutus from './componants/Aboutpage';
 import Contact from './componants/Contactpage';
 import Home from './componants/Homepage';
 import ArrayDemo from './ArrayDemo';
-
+import Help from './componants/Help';
 
 function App(props) {
   return (
@@ -17,16 +17,20 @@ function App(props) {
               <Link to = {'/layout/home'} element={<Home/>} className="btn btn-outline-primary">Home</Link>
           </div>
 
+          <div className='col-1'> 
+              <Link to = {'/layout/students'} element={<ArrayDemo />} className="btn btn-outline-dark">Students</Link>
+          </div>
+
           <div  className='col-1'>
               <Link to={'/layout/about'} element={<Aboutus/> } className="btn btn-outline-danger">ABOUT</Link>
           </div> 
 
           <div className='col-1'> 
               <Link to = {'/layout/contact'} element={<Contact />} className="btn btn-outline-warning">Contact</Link>
-          </div> 
+          </div>  
 
-          <div className='col-1'> 
-              <Link to = {'/layout/students'} element={<ArrayDemo />} className="btn btn-outline-warning">Students</Link>
+           <div className='col-1'> 
+              <Link to = {'/layout/help'} element={<Help />} className="btn btn-outline-info">Help</Link>
           </div> 
 
         </div>
@@ -34,8 +38,7 @@ function App(props) {
 
       
     <div>{props.name}</div>
-      
-
+ 
     </>
   );
 }

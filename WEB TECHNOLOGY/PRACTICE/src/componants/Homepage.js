@@ -1,9 +1,9 @@
 const Home = ()=> {
     return (
         <>
-            <h1>Home page</h1>
+            <h1 style={{margin:"20px"}}>Home page</h1>
            
-            <table class="table table-bordered">
+            <table class="table table-bordered" style={{margin:"20px"}}>
                 <tr>
                     <th scope="col">Rollno</th>
                     <th scope="col">First name</th>

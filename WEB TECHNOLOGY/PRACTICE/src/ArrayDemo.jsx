@@ -47,7 +47,7 @@ const ArrayDemo = () => {
   ))
   
   return( 
-    <table className="table table-bordered">
+    <table className="table table-bordered" style={{margin:"20px"}}>
         {namelist}
   
     </table>
