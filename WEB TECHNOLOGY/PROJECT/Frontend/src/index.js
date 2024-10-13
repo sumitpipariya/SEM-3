@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
-import GetAllFaculty from './pages/faculties/GetAllFaculty';
-import DetailFaculty from './pages/faculties/DetailFaculty';
-import AddFaculty from './pages/faculties/AddFaculty';
-import EditFaculty from './pages/faculties/EditFaculty';
-import DeleteFaculty from './pages/faculties/DeleteFaculty';
+import GetAllFaculty from './pages/GetAllFaculty';
+import DetailFaculty from './pages/DetailFaculty';
+import AddFaculty from './pages/AddFaculty';
+import EditFaculty from './pages/EditFaculty';
+import DeleteFaculty from './pages/DeleteFaculty';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
